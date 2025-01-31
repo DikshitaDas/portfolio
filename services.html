@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Dikshita's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: Poppins;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: lavender;
+        font-size: 1.04rem;
+      }
+
+      .left {
+        font-size: 1.3rem;
+      }
+      .purple {
+        color: rgb(178, 111, 253);
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 136px 0;
+      }
+
+      .firstSection > div {
+        /* > to add the properties to first div */
+        width: 30%;
+      }
+
+      .leftSection {
+        font-size: 2.5rem;
+        /* margin: 30px 0;  */
+      }
+
+      .leftSection .buttons {
+        padding: 50px 0;
+      }
+
+      .leftSection .btn {
+        padding: 12px;
+        background: none;
+        color: white;
+        border: 2px solid white;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+
+      .rightSection img {
+        width: 80%;
+      }
+
+      #element {
+        color: rgb(178, 111, 253);
+      }
+
+      .secondSection {
+        max-width: 180vh;
+        height: 100vh;
+        margin: auto;
+      }
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+
+      .grey {
+        color: grey;
+      }
+      main hr {
+        border: 0;
+        background: lavender;
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+
+      .secondSection .box {
+        background: white;
+        width: 130vh;
+        height: 2px;
+        margin: 70px 0;
+        display: flex;
+      }
+
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 0 200px 200px;
+      }
+
+      .image-top {
+        width: 30px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+
+      .vertical-title {
+        position: relative;
+        top: 74px;
+        width: 150px;
+        font-size: 20px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 74px;
+        width: 150px;
+        color: grey;
+        font-size: 9px;
+      }
+
+      footer {
+        background-color: rgb(18, 18, 62);
+        /* height: 200px; */
+      }
+      .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+      }
+
+      .footer > div {
+        width: 140px;
+      }
+
+      .footer ul {
+        list-style: none;
+      }
+
+      footer .footer-rights {
+        text-align: center;
+        color: grey;
+        padding: 10px;
+      }
+      .footer .footer-first {
+        font-size: 1.5rem;
+        padding: 20px 0 20px 0;
+      }
+      .footer .footer-third {
+        padding-right: 120px;
+      }
+      .footer li {
+        list-style: none;
+        margin: 10px 0;
+      }
+      .footer li a {
+        text-decoration: none;
+        color: rgb(151, 151, 235);
+      }
+      .footer li a:hover {
+        color: rgb(115, 115, 231);
+        font-size: 1.04rem;
+      }
+      .footer .footer-fourth img {
+        width: 20px;
+        position: relative;
+        margin-right: 15px;
+        padding-top: 8px;
+      }
+
+      @media screen and (max-width: 800px) {
+        .box {
+          /* display: flex; */
+          flex-direction: column;
+        }
+
+        .secondSection .vertical {
+          height: unset;
+        }
+
+        .vertical-title,
+        .vertical-desc {
+          left: 13px;
+          top: -26px;
+        }
+
+        .secondSection .box {
+          width: 50vw;
+        }
+
+        nav {
+          /* display: flex; */
+          flex-direction: column;
+        }
+
+        footer {
+          display: none;
+        }
+
+        .firstSection {
+          /* display: flex; */
+          flex-direction: column-reverse;
+        }
+
+        .leftSection {
+          width: 100% !important;
+          /* display: flex; */
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .rightSection {
+          width: 72% !important;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-[rgb(0,0,33)] text-white">
+    <header>
+      <nav>
+        <div class="left">Dikshita's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <span class="text-indigo-400 text-lg">Services</span>
+            <h1 class="text-4xl font-bold text-indigo-400 mt-2 mb-8">What I Offer</h1>
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Service 1: Web Development -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
+                    <h2 class="text-2xl font-semibold text-indigo-300 mb-4">Web Development</h2>
+                    <p class="text-gray-400 mb-4">I specialize in creating dynamic and responsive websites using modern web technologies like HTML, CSS, JavaScript, and React.js, ensuring great user experience and performance.</p>
+                    <a href="https://github.com/DikshitaDas/PasteApp" class="text-indigo-400 hover:text-indigo-300">See My Work →</a>
+                </div>
+    
+                <!-- Service 2: Full-Stack Development -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
+                    <h2 class="text-2xl font-semibold text-indigo-300 mb-4">Full-Stack Development</h2>
+                    <p class="text-gray-400 mb-4">Expert in building full-stack applications using the MERN stack (MongoDB, Express.js, React.js, Node.js), focusing on performance, scalability, and clean code.</p>
+                    <a href="https://github.com/DikshitaDas/GitHubber" class="text-indigo-400 hover:text-indigo-300">See My Work →</a>
+                </div>
+    
+                <!-- Service 3: Embedded Systems & IoT -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
+                    <h2 class="text-2xl font-semibold text-indigo-300 mb-4">Embedded Systems & IoT</h2>
+                    <p class="text-gray-400 mb-4">Develop embedded systems and IoT solutions, working with microcontrollers like ESP32, sensors, and communication protocols to build smart devices and systems.</p>
+                    <a href="https://github.com/DikshitaDas/Temperature-monitoring-using-ESP32" class="text-indigo-400 hover:text-indigo-300">See My Work →</a>
+                </div>
+    
+                <!-- Service 4: API Development -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
+                    <h2 class="text-2xl font-semibold text-indigo-300 mb-4">API Development</h2>
+                    <p class="text-gray-400 mb-4">I design and implement RESTful APIs using Node.js and Express, enabling seamless integration between the frontend and backend for smooth data exchange.</p>
+                    <a href="https://github.com/DikshitaDas/MoviesAPI" class="text-indigo-400 hover:text-indigo-300">See My Work →</a>
+                </div>
+    
+                <!-- Service 5: Java GUI Development -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
+                    <h2 class="text-2xl font-semibold text-indigo-300 mb-4">Java GUI Development</h2>
+                    <p class="text-gray-400 mb-4">Develop graphical user interfaces using Java, creating interactive applications with a focus on user-friendly designs and functionality.</p>
+                    <a href="https://github.com/DikshitaDas/SnakeGame" class="text-indigo-400 hover:text-indigo-300">See My Work →</a>
+                </div>
+    
+                <!-- Service 6: UI/UX Design -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300">
+                    <h2 class="text-2xl font-semibold text-indigo-300 mb-4">UI/UX Design</h2>
+                    <p class="text-gray-400 mb-4">Create clean, user-centered designs that are visually appealing and user-friendly, ensuring smooth navigation and enhanced user experience.</p>
+                    <a href="https://www.figma.com/design/k7ERrSRkdAPH2UkALvVwaE/HSR?node-id=0-1&t=93Uash0Qd2NMSdE7-1" class="text-indigo-400 hover:text-indigo-300">See My Work →</a>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
+
+
+    <footer>
+        <div class="footer">
+          <div class="footer-first">
+            <h4>Dikshita's Developer Portfolio</h4>
+          </div>
+          <div class="footer-second">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-third">
+            <h4>Contact Me</h4>
+            <ul>
+              <li>
+                <p>
+                  Email:
+                  <a href="mailto:dasdikshita929@gmail.com"
+                    >dasdikshita929@gmail.com</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p>Phone: <a href="tel:+918617757228">+91 8617757228</a></p>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-fourth">
+            <h4>Follow Me</h4>
+            <ul>
+              <li>
+                <img src="/images/icons8-linkedin-logo-240.png" alt="" /><a
+                  href="https://www.linkedin.com/in/dikshita-das-3bb414203/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <img src="/images/icons8-github-logo-96.png" alt="" />
+                <a href="https://github.com/DikshitaDas" target="_blank"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <img src="/images/icons8-facebook-logo-480.png" alt="" /><a
+                  href="hhttps://www.facebook.com/dikshita.das.986/"
+                  target="_blank"
+                  >Facebook</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="footer-rights">
+          copyright &copy; www.dikshitasportfolio.com | All Rights Reserved
+        </div>
+      </footer>
+  </body>
+</html>
