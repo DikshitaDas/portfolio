@@ -30,4 +30,6 @@
 - [LinkedIn](https://www.linkedin.com/in/dikshita-das-3bb414203/)
 - [GitHub](https://github.com/DikshitaDas)
 
---- 
+## 📜 **License**  
+
+MIT License. See the [LICENSE](LICENSE) file for details.  
