@@ -15,6 +15,12 @@
 - **Showcase:** Presents my skills, projects, and achievements.
 
 
+## 📸 **Screenshots**  
+
+### **Home Page**  
+<img src="https://github.com/DikshitaDas/GitHubber/blob/main/screenshots/gt-3.png" width="800" >  
+
+
 ## 🌐 **Live Demo**
 
 [Live Demo](https://portfolio-x3pa.onrender.com/)
