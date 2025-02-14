@@ -18,7 +18,8 @@
 ## 📸 **Screenshots**  
 
 ### **Home Page**  
-<img src="https://github.com/DikshitaDas/GitHubber/blob/main/screenshots/gt-3.png" width="800" >  
+<img src="https://github.com/DikshitaDas/portfolio/blob/main/images/1.png" width="800" > 
+<img src="https://github.com/DikshitaDas/portfolio/blob/main/images/2.png" width="800" >  
 
 
 ## 🌐 **Live Demo**
